@@ -19,7 +19,7 @@ public class BoardManager : MonoBehaviour
 
     public PlayerController Player;
 
-    void Start()
+    public void Init()
     {
         m_Tilemap = GetComponentInChildren<Tilemap>();
         m_Grid = GetComponentInChildren<Grid>();
