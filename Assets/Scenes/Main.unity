@@ -392,8 +392,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1778725276}
   - component: {fileID: 1778725275}
+  - component: {fileID: 1778725277}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: BoardManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,6 +428,34 @@ Transform:
   - {fileID: 1222002832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1778725277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778725274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e4b649b124ee040be271f1aaf8e1e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoardManager
+  Width: 8
+  Height: 8
+  GroundTiles:
+  - {fileID: 11400000, guid: 28ec85027004bdf43b77466ba9470d94, type: 2}
+  - {fileID: 11400000, guid: 9688b6e719a079740993b1030c384a33, type: 2}
+  - {fileID: 11400000, guid: cb125c4e6485fc8428ffd633dd390ff1, type: 2}
+  - {fileID: 11400000, guid: 0c1c5dc3419054149a620aefe9b399ea, type: 2}
+  - {fileID: 11400000, guid: cb125c4e6485fc8428ffd633dd390ff1, type: 2}
+  - {fileID: 11400000, guid: 28ec85027004bdf43b77466ba9470d94, type: 2}
+  - {fileID: 11400000, guid: c9ee05d5046d3d043bdbd4e4cdfc469e, type: 2}
+  - {fileID: 11400000, guid: 9688b6e719a079740993b1030c384a33, type: 2}
+  - {fileID: 11400000, guid: ce2c8d2c30aa0fe42b61207acccbdb70, type: 2}
+  WallTiles:
+  - {fileID: 11400000, guid: e424ac9334f43fa46b85f919102e4895, type: 2}
+  - {fileID: 11400000, guid: 0f7ebf05ba05c074faf0157cf5b3a5cf, type: 2}
+  - {fileID: 11400000, guid: bd2b4ff30cbdc2a49b1cce319f008223, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
