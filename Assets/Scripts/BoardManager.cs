@@ -24,6 +24,7 @@ public class BoardManager : MonoBehaviour
 
     public FoodObject FoodPrefab;
     public WallObject WallPrefab;
+    public ExitCellObject ExitCellPrefab;
 
     public void Init()
     {
@@ -55,6 +56,9 @@ public class BoardManager : MonoBehaviour
         }
         //Player.Spawn(this, new Vector2Int(1, 1));
         m_EmptyCellsList.Remove(new Vector2Int(1, 1));
+        Vector2Int endCoord = new Vector2Int(Width - 2, Height - 2);
+        AddObject(Instantiate(ExitCellPrefab), endCoord);
+        m_EmptyCellsList.Remove(endCoord);
         GenerateWall();
         GenerateFood();
     }
@@ -119,6 +123,27 @@ public class BoardManager : MonoBehaviour
         }
     }
 
+    public void Clean()
+    {
+        if (m_BoardData == null)
+        {
+            return;
+        }
+        for (int y = 0; y < Height; ++y)
+        {
+            for (int x = 0; x < Width; ++x)
+            {
+                var cellData = m_BoardData[x, y];
+
+                if (cellData.ContainedObject != null)
+                {
+                    Destroy(cellData.ContainedObject.gameObject);
+                }
+
+                SetCellTile(new Vector2Int(x, y), null);
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {

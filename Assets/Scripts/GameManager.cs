@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public UIDocument UIDoc;
     private Label m_FoodLabel;
 
+    private int m_CurrentLevel = 1;
+
     private void Awake()
     {
         if (Instance != null)
@@ -24,14 +26,21 @@ public class GameManager : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {
-        m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
-        m_FoodLabel.text = "Food: " + m_FoodAmount;
-        
+    { 
         TurnManager = new TurnManager();
         TurnManager.OnTick += OnTurnHappen;
+        NewLevel();
+
+        m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
+        m_FoodLabel.text = "Food: " + m_FoodAmount;
+    }
+
+    public void NewLevel()
+    {
+        BoardManager.Clean();
         BoardManager.Init();
         PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
+        m_CurrentLevel++;
     }
 
     void OnTurnHappen()
