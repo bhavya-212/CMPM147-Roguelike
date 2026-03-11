@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
     private Vector2Int m_CellPosition;
     private bool m_IsGameOver;
 
+    public Vector2Int Cell
+    {
+        get { return m_CellPosition; }
+    }
     public void Spawn(BoardManager boardManager, Vector2Int cell)
     {
         m_Board = boardManager;

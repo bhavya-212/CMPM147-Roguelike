@@ -25,14 +25,13 @@ public class GameManager : MonoBehaviour
             return;
         }
         Instance = this;
+        TurnManager = new TurnManager();
+        TurnManager.OnTick += OnTurnHappen;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        TurnManager = new TurnManager();
-        TurnManager.OnTick += OnTurnHappen;
-
         m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
 
         m_GameOverPanel = UIDoc.rootVisualElement.Q<VisualElement>("GameOverPanel");
@@ -72,7 +71,7 @@ public class GameManager : MonoBehaviour
     public void ChangeFood(int amount)
     {
         m_FoodAmount += amount;
-        m_FoodLabel.text = "Food: " + m_FoodAmount;
+        m_FoodLabel.text = "Energy: " + m_FoodAmount;
 
         if (m_FoodAmount <= 0)
         {
