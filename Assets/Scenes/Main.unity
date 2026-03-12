@@ -598,18 +598,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87e4b649b124ee040be271f1aaf8e1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoardManager
-  Width: 10
-  Height: 10
+  Width: 8
+  Height: 8
   GroundTiles:
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
-  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   WallTiles:
   - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
   - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
