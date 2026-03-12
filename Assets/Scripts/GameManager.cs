@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public PlayerController PlayerController;
     public TurnManager TurnManager { get; private set; }
 
-    private int m_FoodAmount = 10;
+    private int m_FoodAmount = 20;
     public UIDocument UIDoc;
     private Label m_FoodLabel;
 
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         m_GameOverPanel.style.visibility = Visibility.Hidden;
 
         m_CurrentLevel = 1;
-        m_FoodAmount = 10;
+        m_FoodAmount = 20;
         m_FoodLabel.text = "Food : " + m_FoodAmount;
 
         BoardManager.Clean();
