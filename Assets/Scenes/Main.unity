@@ -611,9 +611,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9688b6e719a079740993b1030c384a33, type: 2}
   - {fileID: 11400000, guid: ce2c8d2c30aa0fe42b61207acccbdb70, type: 2}
   WallTiles:
-  - {fileID: 11400000, guid: e424ac9334f43fa46b85f919102e4895, type: 2}
-  - {fileID: 11400000, guid: 0f7ebf05ba05c074faf0157cf5b3a5cf, type: 2}
-  - {fileID: 11400000, guid: bd2b4ff30cbdc2a49b1cce319f008223, type: 2}
+  - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
+  - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
+  - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
   Player: {fileID: 120621531}
   Enemy: {fileID: 9068664134245966826, guid: 83e159fc3d4191d4fbac262fb6523608, type: 3}
   FoodPrefab: {fileID: 4336671360160626540, guid: c4ae25aa66605324d9ac14ca937c2194, type: 3}
