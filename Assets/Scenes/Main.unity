@@ -440,7 +440,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.7396226, g: 0.8488131, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -601,15 +601,15 @@ MonoBehaviour:
   Width: 10
   Height: 10
   GroundTiles:
-  - {fileID: 11400000, guid: 28ec85027004bdf43b77466ba9470d94, type: 2}
-  - {fileID: 11400000, guid: 9688b6e719a079740993b1030c384a33, type: 2}
-  - {fileID: 11400000, guid: cb125c4e6485fc8428ffd633dd390ff1, type: 2}
-  - {fileID: 11400000, guid: 0c1c5dc3419054149a620aefe9b399ea, type: 2}
-  - {fileID: 11400000, guid: cb125c4e6485fc8428ffd633dd390ff1, type: 2}
-  - {fileID: 11400000, guid: 28ec85027004bdf43b77466ba9470d94, type: 2}
-  - {fileID: 11400000, guid: c9ee05d5046d3d043bdbd4e4cdfc469e, type: 2}
-  - {fileID: 11400000, guid: 9688b6e719a079740993b1030c384a33, type: 2}
-  - {fileID: 11400000, guid: ce2c8d2c30aa0fe42b61207acccbdb70, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
+  - {fileID: 11400000, guid: 2449dfb71e4c97544be2368b0d00cfa2, type: 2}
   WallTiles:
   - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
   - {fileID: 11400000, guid: 5dd9df769453ee646abc2d10adb58fb4, type: 2}
