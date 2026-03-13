@@ -99,7 +99,7 @@ public class BoardManager : MonoBehaviour
 
     void GenerateFood()
     {
-        int foodCount = 5;
+        int foodCount = 8;
         for (int i = 0; i < foodCount; i++)
         {
             int randomIndex = Random.Range(0, m_EmptyCellsList.Count);
