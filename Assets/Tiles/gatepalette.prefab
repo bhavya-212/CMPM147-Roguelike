@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 5048894429633121949}
   - component: {fileID: 4342636722994106441}
   m_Layer: 0
-  m_Name: gatepalette
+  m_Name: GatePalette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
