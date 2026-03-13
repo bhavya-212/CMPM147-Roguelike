@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9db592772ef9747956fc02521b9500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExitCellObject
-  EndTile: {fileID: 11400000, guid: 8dd1a5ad4f4f4284689e7d881e1c4865, type: 2}
+  EndTile: {fileID: 11400000, guid: 152d1a00e35474f428c737e494a59445, type: 2}
