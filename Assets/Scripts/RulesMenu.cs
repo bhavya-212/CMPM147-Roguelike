@@ -1,21 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenu : MonoBehaviour
+public class RulesMenu : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartRules()
     {
-        SceneManager.LoadScene("Rules");
-    }
-    public void StartGame()
-    {
         SceneManager.LoadScene("Main");
-    }
-
-    public void BackMenu()
-    {
-        SceneManager.LoadScene("Start");
     }
     void Start()
     {
