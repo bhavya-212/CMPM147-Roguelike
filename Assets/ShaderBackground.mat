@@ -47,36 +47,36 @@ Material:
     - _CoordMode: 0
     - _EnableExternalAlpha: 0
     - _Gain: 0.5
-    - _Lacunarity: 2
+    - _Lacunarity: 1.5
     - _Octaves: 4
-    - _Scale: 80
-    - _ScrollSpeed: 0.05
+    - _Scale: 30
+    - _ScrollSpeed: 0.02
     - _Seed: 1337
-    - _Speed: 0.35
+    - _Speed: 0.05
     - _SpinDegPerSec: 30
     - _SpinEnabled: 0
-    - _SwirlDegrees: 500
+    - _SwirlDegrees: -236
     - _SwirlEnabled: 1
-    - _SwirlFalloff: 1.6
+    - _SwirlFalloff: 1.8
     - _T: 0
     - _UseObjectSpace: 0
     - _UsePalette: 1
-    - _WarpAmp: 18
+    - _WarpAmp: 0
     - _WarpEnabled: 1
     - _WarpOctaves: 3
-    - _WarpScale: 55
-    - _WarpSeed: 1337
+    - _WarpScale: 70
+    - _WarpSeed: -3.2
     - _WorldCoordScale: 1
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Palette0: {r: 0.64705884, g: 0.78431374, b: 1, a: 1}
-    - _Palette1: {r: 0.64705884, g: 0.78431374, b: 1, a: 1}
-    - _Palette2: {r: 0.96862745, g: 0.61960787, b: 0.6784314, a: 1}
+    - _Palette0: {r: 1, g: 0.854902, b: 0.45882356, a: 1}
+    - _Palette1: {r: 0.7725491, g: 0.86274517, b: 1, a: 1}
+    - _Palette2: {r: 1, g: 0.8113208, b: 0.8431206, a: 1}
     - _Palette3: {r: 1, g: 0.85490197, b: 0.45882353, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Resolution: {r: 256, g: 144, b: 0, a: 0}
     - _ScrollDir: {r: 0.7, g: 0, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 2, g: 5, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
