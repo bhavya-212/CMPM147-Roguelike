@@ -55,7 +55,7 @@ Material:
     - _Speed: 0.35
     - _SpinDegPerSec: 30
     - _SpinEnabled: 0
-    - _SwirlDegrees: 360
+    - _SwirlDegrees: 500
     - _SwirlEnabled: 1
     - _SwirlFalloff: 1.6
     - _T: 0
@@ -70,10 +70,10 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Palette0: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
-    - _Palette1: {r: 0.19999996, g: 0.15999997, b: 0.29999998, a: 1}
-    - _Palette2: {r: 0.43999997, g: 0.17999998, b: 0.52, a: 1}
-    - _Palette3: {r: 0.85, g: 0.72, b: 0.92, a: 1}
+    - _Palette0: {r: 0.64705884, g: 0.78431374, b: 1, a: 1}
+    - _Palette1: {r: 0.64705884, g: 0.78431374, b: 1, a: 1}
+    - _Palette2: {r: 0.96862745, g: 0.61960787, b: 0.6784314, a: 1}
+    - _Palette3: {r: 1, g: 0.85490197, b: 0.45882353, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _Resolution: {r: 256, g: 144, b: 0, a: 0}
     - _ScrollDir: {r: 0.7, g: 0, b: 0, a: 0}
