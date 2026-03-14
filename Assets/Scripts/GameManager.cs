@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
 
         m_CurrentLevel = 1;
         m_FoodAmount = 20;
-        m_FoodLabel.text = "Food : " + m_FoodAmount;
+        m_FoodLabel.text = "Energy : " + m_FoodAmount;
 
         BoardManager.Clean();
         BoardManager.Init();
