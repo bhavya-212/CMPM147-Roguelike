@@ -1,27 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenu : MonoBehaviour
+public class CreditsMenu : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void StartRules()
-    {
-        SceneManager.LoadScene("Rules");
-    }
-    
     public void StartCredits()
     {
-        SceneManager.LoadScene("Credits");
-    }
-
-    public void StartGame()
-    {
         SceneManager.LoadScene("Main");
-    }
-
-    public void BackMenu()
-    {
-        SceneManager.LoadScene("Start");
     }
     void Start()
     {
