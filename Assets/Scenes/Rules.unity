@@ -783,14 +783,17 @@ MonoBehaviour:
     Each movement: -1 energy
 
 
-    Halo collection: +3 energy
+    Halo collection: +4 energy
 
 
     Dark
-    cloud obstacle: -4 energy to defeat
+    cloud obstacle: -1 energy per
+
+    movement, 2 moves (-2 energy) to defeat
 
 
-    Devil obstacle: -3 energy to defeat'
+    Devil
+    obstacle: -3 energy to defeat'
 --- !u!222 &1344578675
 CanvasRenderer:
   m_ObjectHideFlags: 0

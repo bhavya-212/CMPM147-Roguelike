@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 public class WallObject : CellObject
 {
     public Tile ObstacleTile;
-    public int MaxHealth = 3;
+    public int MaxHealth = 2;
     private int m_HealthPoint;
     private Tile m_OriginalTile;
     public override void Init(Vector2Int cell)
