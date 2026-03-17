@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   Health: 2
-  hitSound: {fileID: 8300000, guid: 778f3dead68091040a4976610237feda, type: 3}
+  hitEnemy: {fileID: 8300000, guid: 8959c40c2d693334996fe0ce14bd0d5d, type: 3}
 --- !u!82 &2832625544240223651
 AudioSource:
   m_ObjectHideFlags: 0
@@ -117,10 +117,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 778f3dead68091040a4976610237feda, type: 3}
+  m_Resource: {fileID: 8300000, guid: 8959c40c2d693334996fe0ce14bd0d5d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 0.71
+  m_Pitch: 3
   Loop: 0
   Mute: 0
   Spatialize: 0

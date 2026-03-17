@@ -5,6 +5,12 @@ public class Enemy : CellObject
     public int Health = 2;
     private int m_CurrentHealth;
     private AudioSource m_AudioSource;
+    public AudioClip hitEnemy;
+
+    void Awake()
+    {
+        m_AudioSource = GetComponent<AudioSource>();
+    }
 
     private void OnEnable()
     {
@@ -23,14 +29,15 @@ public class Enemy : CellObject
     {
         base.Init(coord);
         m_CurrentHealth = Health;
-        m_AudioSource = GetComponent<AudioSource>();
     }
 
     public override bool PlayerWantsToEnter()
     {
-        m_AudioSource.Play();
+        if (hitEnemy != null)
+        {
+            AudioSource.PlayClipAtPoint(hitEnemy, transform.position);
+        }
         GameManager.Instance.ChangeFood(-1);
-        m_AudioSource.Play();
         m_CurrentHealth -= 1;
 
         if (m_CurrentHealth <= 0)

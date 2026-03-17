@@ -7,6 +7,14 @@ public class WallObject : CellObject
     public int MaxHealth = 2;
     private int m_HealthPoint;
     private Tile m_OriginalTile;
+    private AudioSource m_AudioSource;
+    public AudioClip hitWall;
+
+    void Awake()
+    {
+        m_AudioSource = GetComponent<AudioSource>();
+    }
+
     public override void Init(Vector2Int cell)
     {
         base.Init(cell);
@@ -17,6 +25,10 @@ public class WallObject : CellObject
 
     public override bool PlayerWantsToEnter()
     {
+        if (hitWall != null)
+        {
+            AudioSource.PlayClipAtPoint(hitWall, transform.position);
+        }
         m_HealthPoint -= 1;
         if (m_HealthPoint > 0)
         {
