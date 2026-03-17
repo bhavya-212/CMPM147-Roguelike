@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
     private VisualElement m_GameOverPanel;
     private Label m_GameOverMessage;
 
+    public AudioSource musicSource;
+
     private void Awake()
     {
         if (Instance != null)
@@ -34,6 +37,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        musicSource.Play();
         m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
         m_LevelLabel = UIDoc.rootVisualElement.Q<Label>("LevelLabel");
 
@@ -45,6 +49,16 @@ public class GameManager : MonoBehaviour
 
     public void StartNewGame()
     {
+        if (musicSource != null)
+        {
+            musicSource.volume = 1f;
+
+            if (!musicSource.isPlaying)
+            {
+                musicSource.Play();
+            }
+        }
+
         m_GameOverPanel.style.visibility = Visibility.Hidden;
 
         m_CurrentLevel = 1;
@@ -83,8 +97,22 @@ public class GameManager : MonoBehaviour
             PlayerController.GameOver();
             m_GameOverPanel.style.visibility = Visibility.Visible;
             m_GameOverMessage.text = "Game Over!\n\nYou completed " + m_CurrentLevel + " levels\n\nPress enter to restart";
-
+            StartCoroutine(FadeOutMusic());
         }
+    }
+
+    IEnumerator FadeOutMusic()
+    {
+        float startVolume = musicSource.volume;
+
+        while (musicSource.volume > 0)
+        {
+            musicSource.volume -= startVolume * Time.deltaTime * 0.5f;
+            yield return null;
+        }
+
+        musicSource.Stop();
+        musicSource.volume = startVolume;
     }
 
     public void BackMain()
