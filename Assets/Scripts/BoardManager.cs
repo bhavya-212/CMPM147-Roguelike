@@ -127,7 +127,7 @@ public class BoardManager : MonoBehaviour
 
     void GenerateEnemy()
     {
-        int enemyCount = 2;
+        int enemyCount = GameManager.Instance.EnemyCount();
 
         for (int i = 0; i < enemyCount; i++)
         {

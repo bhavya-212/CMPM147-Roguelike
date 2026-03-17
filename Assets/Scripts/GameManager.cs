@@ -82,6 +82,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public int EnemyCount()
+    {
+        return 2 + (m_CurrentLevel - 1) / 2;
+    }
+
     // Update is called once per frame
     void Update()
     {
