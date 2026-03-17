@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -84,6 +85,11 @@ public class GameManager : MonoBehaviour
             m_GameOverMessage.text = "Game Over!\n\nYou completed " + m_CurrentLevel + " levels\n\nPress enter to restart";
 
         }
+    }
+
+    public void BackMain()
+    {
+        SceneManager.LoadScene("Start");
     }
 
     public int EnemyCount()
