@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     private int m_FoodAmount = 20;
     public UIDocument UIDoc;
     private Label m_FoodLabel;
+    private Label m_LevelLabel;
 
     private int m_CurrentLevel = 1;
 
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         m_FoodLabel = UIDoc.rootVisualElement.Q<Label>("FoodLabel");
+        m_LevelLabel = UIDoc.rootVisualElement.Q<Label>("LevelLabel");
 
         m_GameOverPanel = UIDoc.rootVisualElement.Q<VisualElement>("GameOverPanel");
         m_GameOverMessage = m_GameOverPanel.Q<Label>("GameOverMessage");
@@ -46,7 +48,8 @@ public class GameManager : MonoBehaviour
 
         m_CurrentLevel = 1;
         m_FoodAmount = 20;
-        m_FoodLabel.text = "Energy : " + m_FoodAmount;
+        m_FoodLabel.text = "Energy: " + m_FoodAmount;
+        m_LevelLabel.text = "Level: " + m_CurrentLevel;
 
         BoardManager.Clean();
         BoardManager.Init();
@@ -61,6 +64,7 @@ public class GameManager : MonoBehaviour
         BoardManager.Init();
         PlayerController.Spawn(BoardManager, new Vector2Int(1, 1));
         m_CurrentLevel++;
+        m_LevelLabel.text = "Level: " + m_CurrentLevel;
     }
 
     void OnTurnHappen()
