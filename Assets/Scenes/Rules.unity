@@ -793,9 +793,12 @@ MonoBehaviour:
 
 
     Devil
-    obstacle: -1 energy per
+    obstacle: -2 energy per
 
-    movement, 3 moves (-3 energy) to defeat'
+    movement, 2 moves (-4 energy) to defeat
+
+
+'
 --- !u!222 &1344578675
 CanvasRenderer:
   m_ObjectHideFlags: 0

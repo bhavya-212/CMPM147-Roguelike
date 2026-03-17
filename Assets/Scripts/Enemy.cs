@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : CellObject
 {
-    public int Health = 3;
+    public int Health = 2;
     private int m_CurrentHealth;
 
     private void OnEnable()
@@ -26,6 +26,7 @@ public class Enemy : CellObject
 
     public override bool PlayerWantsToEnter()
     {
+        GameManager.Instance.ChangeFood(-1);
         m_CurrentHealth -= 1;
 
         if (m_CurrentHealth <= 0)
