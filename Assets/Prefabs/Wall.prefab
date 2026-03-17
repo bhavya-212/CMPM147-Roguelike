@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WallObject
   ObstacleTile: {fileID: 11400000, guid: e474f7cd84c3c074ba7ff34e760d6401, type: 2}
   MaxHealth: 2
-  hitWall: {fileID: 8300000, guid: 76a047686b5701e4d9e4589e8df6d4fb, type: 3}
+  hitWall: {fileID: 8300000, guid: e324fa5720465414cb107003e048f5a8, type: 3}
 --- !u!82 &-7102760691942558113
 AudioSource:
   m_ObjectHideFlags: 0
@@ -59,7 +59,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 76a047686b5701e4d9e4589e8df6d4fb, type: 3}
+  m_Resource: {fileID: 8300000, guid: e324fa5720465414cb107003e048f5a8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
