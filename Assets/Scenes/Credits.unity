@@ -461,6 +461,9 @@ MonoBehaviour:
     Shader Background: Jeremy
     Miller
 
+
+    All Music/SFX: DRAGON-STUDIO on Pixabay
+
 '
 --- !u!222 &211563736
 CanvasRenderer:
@@ -817,7 +820,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1.5
-  m_Text: "\nModified from Unity's 2D Roguelike \nTutorial"
+  m_Text: "\n\nModified from Unity's 2D Roguelike \nTutorial"
 --- !u!222 &1481371194
 CanvasRenderer:
   m_ObjectHideFlags: 0
